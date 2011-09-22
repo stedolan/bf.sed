@@ -1,0 +1,22 @@
+      ########################################################
+      ##                                                    ##
+      ##                      bf.sed                        ##
+      ##                                                    ##
+      ##       an optimising compiler for brainfuck         ##
+      ##          produces x86 Linux ELF binaries           ##
+      ##              written entirely in sed               ##
+      ##                                                    ##
+      ########################################################
+
+This is a compiler for the minimalist brainfuck programming language.
+There's a description of how it works in the comments, and a few
+example brainfuck files in this repo.
+
+The brainfuck code is taken from examples on Wikipedia and programs on
+www.muppetlabs.com/~breadbox/bf and esoteric.sange.fi/brainfuck.
+
+If you have an urge to see the assembly produced by this script, I
+recommend installing nasm and using "ndisasm -u -e 84 $output".
+
+I would not recommend sed as a compiler implementation language, but
+it's definitely in keeping with the spirit of brainfuck.
